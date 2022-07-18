@@ -12,11 +12,13 @@ export default class GameView {
         let that = this;
 
 
+        // this.game.draw(that.ctx);
         setInterval(function(){
             // console.log(that.game)
+            // that.game.ship.draw(that.ctx)
             that.game.draw(that.ctx);
-            that.game.moveObjects();
+            that.game.step();
         }
-        ,20)
+        ,200)
     }
 }
